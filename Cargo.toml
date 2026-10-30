@@ -1,0 +1,52 @@
+[package]
+name = "skinweaver"
+version = "1.0.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT"
+description = "Skinweaver: mix, preview and batch-edit osu! skins on Windows"
+build = "build.rs"
+
+[[bin]]
+name = "skinweaver"
+path = "src/main.rs"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+anyhow = "1"
+eframe = { version = "0.37", default-features = false, features = ["default_fonts", "glow", "accesskit"] }
+egui_extras = { version = "0.37", features = ["image", "svg"] }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+encoding_rs = "0.8"
+tempfile = "3"
+zip = { version = "6", default-features = false, features = ["deflate"] }
+md5 = "0.8"
+rfd = "0.17"
+rodio = { version = "0.22", default-features = false, features = ["playback", "symphonia-wav", "symphonia-mp3", "symphonia-vorbis", "symphonia-ogg", "symphonia-pcm"] }
+open = "5"
+fs2 = "0.4"
+sys-locale = "0.3"
+
+[build-dependencies]
+winresource = "0.1"
+
+[profile.release]
+lto = "thin"
+strip = true
+codegen-units = 4
+
+# Debug builds stay fast to compile but decode images and fonts at release speed.
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+
+# Only used for development builds and headless screenshots on Linux.
+[target.'cfg(target_os = "linux")'.dependencies]
+eframe = { version = "0.37", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }

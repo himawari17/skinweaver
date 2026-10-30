@@ -1,0 +1,4061 @@
+[
+  {
+    "name": "Interface",
+    "children": [
+      {
+        "name": "Main menu",
+        "children": [
+          {
+            "name": "Welcome text (req. supporter)",
+            "target": {
+              "type": "file",
+              "pattern": "welcome_text",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Приветственная надпись (osu!supporter)"
+          },
+          {
+            "name": "Background image (req. supporter)",
+            "target": {
+              "type": "file",
+              "pattern": "menu-background",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Фон меню (osu!supporter)"
+          },
+          {
+            "name": "Snow",
+            "target": {
+              "type": "file",
+              "pattern": "menu-snow",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Снег"
+          },
+          {
+            "name": "[skin.ini] MenuGlow",
+            "target": {
+              "type": "property",
+              "section": "Colours",
+              "key": "MenuGlow"
+            },
+            "ru": "Свечение меню [skin.ini]"
+          }
+        ],
+        "preview": [],
+        "ru": "Главное меню"
+      },
+      {
+        "name": "Song select",
+        "children": [
+          {
+            "name": "Ranking icons",
+            "children": [
+              {
+                "name": "D rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-d-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка D"
+              },
+              {
+                "name": "C rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-c-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка C"
+              },
+              {
+                "name": "B rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-b-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка B"
+              },
+              {
+                "name": "A rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-a-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка A"
+              },
+              {
+                "name": "S rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-s-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка S"
+              },
+              {
+                "name": "S rank (hidden)",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-sh-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Серебряная S"
+              },
+              {
+                "name": "SS rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-x-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка SS"
+              },
+              {
+                "name": "SS rank (hidden)",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-xh-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Серебряная SS"
+              }
+            ],
+            "preview": [],
+            "ru": "Значки оценок"
+          },
+          {
+            "name": "Button",
+            "children": [
+              {
+                "name": "button-left.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "button-left",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Левый край кнопки"
+              },
+              {
+                "name": "button-middle.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "button-middle",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Середина кнопки"
+              },
+              {
+                "name": "button-right.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "button-right",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Правый край кнопки"
+              }
+            ],
+            "preview": [],
+            "ru": "Обычная кнопка"
+          },
+          {
+            "name": "Bottom bar buttons",
+            "children": [
+              {
+                "name": "selection-mode*.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "selection-mode*",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": [
+                    "",
+                    "-over"
+                  ]
+                },
+                "ru": "Выбор режима"
+              },
+              {
+                "name": "selection-mods*.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "selection-mods*",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": [
+                    "",
+                    "-over"
+                  ]
+                },
+                "ru": "Выбор модов"
+              },
+              {
+                "name": "selection-options*.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "selection-options*",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": [
+                    "",
+                    "-over"
+                  ]
+                },
+                "ru": "Настройки карты"
+              },
+              {
+                "name": "selection-random*.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "selection-random*",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": [
+                    "",
+                    "-over"
+                  ]
+                },
+                "ru": "Случайная карта"
+              }
+            ],
+            "preview": [],
+            "ru": "Кнопки нижней панели"
+          },
+          {
+            "name": "Gamemode icons (background)",
+            "children": [
+              {
+                "name": "mode-osu.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-osu",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!"
+              },
+              {
+                "name": "mode-taiko.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-taiko",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!taiko"
+              },
+              {
+                "name": "mode-fruits.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-fruits",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!catch"
+              },
+              {
+                "name": "mode-mania.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-mania",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!mania"
+              }
+            ],
+            "preview": [],
+            "ru": "Фоновые значки режимов"
+          },
+          {
+            "name": "Gamemode icons (selection menu)",
+            "children": [
+              {
+                "name": "mode-osu-med.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-osu-med",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!"
+              },
+              {
+                "name": "mode-taiko-med.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-taiko-med",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!taiko"
+              },
+              {
+                "name": "mode-fruits-med.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-fruits-med",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!catch"
+              },
+              {
+                "name": "mode-mania-med.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-mania-med",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!mania"
+              }
+            ],
+            "preview": [],
+            "ru": "Значки в меню режимов"
+          },
+          {
+            "name": "Gamemode icons (bottom bar)",
+            "children": [
+              {
+                "name": "mode-osu-small.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-osu-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!"
+              },
+              {
+                "name": "mode-taiko-small.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-taiko-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!taiko"
+              },
+              {
+                "name": "mode-fruits-small.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-fruits-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!catch"
+              },
+              {
+                "name": "mode-mania-small.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "mode-mania-small",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "osu!mania"
+              }
+            ],
+            "preview": [],
+            "ru": "Значки режимов внизу"
+          },
+          {
+            "name": "Back button",
+            "target": {
+              "type": "file",
+              "pattern": "menu-back",
+              "audio": false,
+              "animated": true,
+              "suffixes": null
+            },
+            "ru": "Назад"
+          },
+          {
+            "name": "Beatmap/scoreboard item",
+            "target": {
+              "type": "file",
+              "pattern": "menu-button-background",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Плашка карты и результата"
+          },
+          {
+            "name": "Offset wizard tick",
+            "target": {
+              "type": "file",
+              "pattern": "options-offset-tick",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Метка настройки задержки"
+          },
+          {
+            "name": "Tab",
+            "target": {
+              "type": "file",
+              "pattern": "selection-tab",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Вкладка"
+          },
+          {
+            "name": "Difficulty star",
+            "target": {
+              "type": "file",
+              "pattern": "star",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Звезда сложности"
+          },
+          {
+            "name": "songselect-bottom.png",
+            "target": {
+              "type": "file",
+              "pattern": "songselect-bottom",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Нижняя панель"
+          },
+          {
+            "name": "songselect-top.png",
+            "target": {
+              "type": "file",
+              "pattern": "songselect-top",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Верхняя панель"
+          },
+          {
+            "name": "[skin.ini] SongSelectActiveText",
+            "target": {
+              "type": "property",
+              "section": "Colours",
+              "key": "SongSelectActiveText"
+            },
+            "ru": "Текст выбранной карты [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] SongSelectInactiveText",
+            "target": {
+              "type": "property",
+              "section": "Colours",
+              "key": "SongSelectInactiveText"
+            },
+            "ru": "Текст остальных карт [skin.ini]"
+          }
+        ],
+        "preview": [],
+        "ru": "Выбор карты"
+      },
+      {
+        "name": "Mod icons",
+        "children": [
+          {
+            "name": "Autoplay",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-autoplay",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Cinema",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-cinema",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Double Time",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-doubletime",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Easy",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-easy",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Fade-in",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-fadein",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Flashlight",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-flashlight",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Half Time",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-halftime",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Hard Rock",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-hardrock",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Hidden",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-hidden",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "1K",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-key1",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "2K",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-key2",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "3K",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-key3",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "4K",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-key4",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "5K",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-key5",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "6K",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-key6",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "7K",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-key7",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "8K",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-key8",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "9K",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-key9",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Co-op",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-keycoop",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Mirror",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-mirror",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Nightcore",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-nightcore",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "No Fail",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-nofail",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Perfect",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-perfect",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Random",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-random",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Relax",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-relax",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Autopilot",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-relax2",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "ScoreV2",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-scorev2",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Spun Out",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-spunout",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Sudden Death",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-suddendeath",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Target Practice",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-target",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          },
+          {
+            "name": "Touch Device",
+            "target": {
+              "type": "file",
+              "pattern": "selection-mod-touchdevice",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            }
+          }
+        ],
+        "preview": [],
+        "ru": "Значки модов"
+      },
+      {
+        "name": "Results screen",
+        "children": [
+          {
+            "name": "Ranking panel",
+            "target": {
+              "type": "file",
+              "pattern": "ranking-panel",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Панель с результатом"
+          },
+          {
+            "name": "Ranking title",
+            "target": {
+              "type": "file",
+              "pattern": "ranking-title",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Заголовок экрана"
+          },
+          {
+            "name": "Grades",
+            "children": [
+              {
+                "name": "D rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-d",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка D"
+              },
+              {
+                "name": "C rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-c",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка C"
+              },
+              {
+                "name": "B rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-b",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка B"
+              },
+              {
+                "name": "A rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-a",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка A"
+              },
+              {
+                "name": "S rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-s",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка S"
+              },
+              {
+                "name": "S rank (hidden)",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-sh",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Серебряная S"
+              },
+              {
+                "name": "SS rank",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-x",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Оценка SS"
+              },
+              {
+                "name": "SS rank (hidden)",
+                "target": {
+                  "type": "file",
+                  "pattern": "ranking-xh",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Серебряная SS"
+              }
+            ],
+            "ru": "Оценки"
+          },
+          {
+            "name": "Accuracy title",
+            "target": {
+              "type": "file",
+              "pattern": "ranking-accuracy",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Надпись «Точность»"
+          },
+          {
+            "name": "Max combo title",
+            "target": {
+              "type": "file",
+              "pattern": "ranking-maxcombo",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Надпись «Макс. комбо»"
+          },
+          {
+            "name": "Peformance graph",
+            "target": {
+              "type": "file",
+              "pattern": "ranking-graph",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "График точности"
+          },
+          {
+            "name": "Perfect combo text",
+            "target": {
+              "type": "file",
+              "pattern": "ranking-perfect",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Надпись «Полное комбо»"
+          },
+          {
+            "name": "Retry button",
+            "target": {
+              "type": "file",
+              "pattern": "ranking-retry",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Повторить"
+          },
+          {
+            "name": "Watch replay button",
+            "target": {
+              "type": "file",
+              "pattern": "ranking-replay",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Кнопка просмотра повтора"
+          },
+          {
+            "name": "Watch replay button",
+            "target": {
+              "type": "file",
+              "pattern": "pause-replay",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Кнопка просмотра повтора"
+          },
+          {
+            "name": "Multi winner",
+            "target": {
+              "type": "file",
+              "pattern": "ranking-winner",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Надпись «Победитель»"
+          }
+        ],
+        "preview": [],
+        "ru": "Экран результатов"
+      },
+      {
+        "name": "Pause/Fail screen",
+        "children": [
+          {
+            "name": "Pause overlay",
+            "target": {
+              "type": "file",
+              "pattern": "pause-overlay",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Фон паузы"
+          },
+          {
+            "name": "Fail background",
+            "target": {
+              "type": "file",
+              "pattern": "fail-background",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Фон неудачной попытки"
+          },
+          {
+            "name": "Continue button",
+            "target": {
+              "type": "file",
+              "pattern": "pause-continue",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Продолжить"
+          },
+          {
+            "name": "Retry button",
+            "target": {
+              "type": "file",
+              "pattern": "pause-retry",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Повторить"
+          },
+          {
+            "name": "Back button",
+            "target": {
+              "type": "file",
+              "pattern": "pause-back",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Назад"
+          },
+          {
+            "name": "Selection arrow",
+            "target": {
+              "type": "file",
+              "pattern": "arrow-pause",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Стрелка выбора"
+          }
+        ],
+        "preview": [],
+        "ru": "Пауза и неудачная попытка"
+      },
+      {
+        "name": "In-game",
+        "children": [
+          {
+            "name": "Health bar",
+            "children": [
+              {
+                "name": "Background",
+                "target": {
+                  "type": "file",
+                  "pattern": "scorebar-bg",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Фон"
+              },
+              {
+                "name": "Fill",
+                "target": {
+                  "type": "file",
+                  "pattern": "scorebar-colour",
+                  "audio": false,
+                  "animated": true,
+                  "suffixes": null
+                },
+                "ru": "Заполнение шкалы"
+              },
+              {
+                "name": "Passing zone marker",
+                "target": {
+                  "type": "file",
+                  "pattern": "scorebar-ki",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Высокий уровень здоровья"
+              },
+              {
+                "name": "Warning zone marker",
+                "target": {
+                  "type": "file",
+                  "pattern": "scorebar-kidanger",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Низкий уровень здоровья"
+              },
+              {
+                "name": "Critical zone marker",
+                "target": {
+                  "type": "file",
+                  "pattern": "scorebar-kidanger2",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Критический уровень здоровья"
+              },
+              {
+                "name": "Marker (override)",
+                "target": {
+                  "type": "file",
+                  "pattern": "scorebar-marker",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Общий индикатор HP"
+              }
+            ],
+            "preview": [],
+            "ru": "Шкала здоровья"
+          },
+          {
+            "name": "Countdown",
+            "children": [
+              {
+                "name": "Ready",
+                "target": {
+                  "type": "file",
+                  "pattern": "ready",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Готовы?"
+              },
+              {
+                "name": "3",
+                "target": {
+                  "type": "file",
+                  "pattern": "count3",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                }
+              },
+              {
+                "name": "2",
+                "target": {
+                  "type": "file",
+                  "pattern": "count2",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                }
+              },
+              {
+                "name": "1",
+                "target": {
+                  "type": "file",
+                  "pattern": "count1",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                }
+              },
+              {
+                "name": "Go",
+                "target": {
+                  "type": "file",
+                  "pattern": "go",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Начали!"
+              }
+            ],
+            "preview": [],
+            "ru": "Обратный отсчёт"
+          },
+          {
+            "name": "Fonts",
+            "children": [
+              {
+                "name": "Score entry",
+                "target": {
+                  "type": "file",
+                  "pattern": "scoreentry-*",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "comma",
+                    "dot",
+                    "percent",
+                    "x"
+                  ]
+                },
+                "ru": "Цифры в таблице рекордов"
+              },
+              {
+                "name": "Score/accuracy/combo",
+                "target": {
+                  "type": "file",
+                  "pattern": "score-*",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "comma",
+                    "dot",
+                    "percent",
+                    "x"
+                  ]
+                },
+                "ru": "Счёт, точность и комбо"
+              },
+              {
+                "name": "[skin.ini] ScorePrefix",
+                "target": {
+                  "type": "property",
+                  "section": "Fonts",
+                  "key": "ScorePrefix"
+                },
+                "ru": "Префикс цифр счёта [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] ScoreOverlap",
+                "target": {
+                  "type": "property",
+                  "section": "Fonts",
+                  "key": "ScoreOverlap"
+                },
+                "ru": "Наложение цифр счёта [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] ComboPrefix",
+                "target": {
+                  "type": "property",
+                  "section": "Fonts",
+                  "key": "ComboPrefix"
+                },
+                "ru": "Префикс цифр комбо [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] ComboOverlap",
+                "target": {
+                  "type": "property",
+                  "section": "Fonts",
+                  "key": "ComboOverlap"
+                },
+                "ru": "Наложение цифр комбо [skin.ini]"
+              }
+            ],
+            "preview": [],
+            "ru": "Шрифты"
+          },
+          {
+            "name": "Key overlay",
+            "children": [
+              {
+                "name": "Background",
+                "target": {
+                  "type": "file",
+                  "pattern": "inputoverlay-background",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Фон"
+              },
+              {
+                "name": "Key",
+                "target": {
+                  "type": "file",
+                  "pattern": "inputoverlay-key",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Клавиша"
+              },
+              {
+                "name": "[skin.ini] InputOverlayText",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "InputOverlayText"
+                },
+                "ru": "Цвет счётчика нажатий [skin.ini]"
+              }
+            ],
+            "preview": [],
+            "ru": "Индикатор нажатий"
+          },
+          {
+            "name": "Skip button",
+            "target": {
+              "type": "file",
+              "pattern": "play-skip",
+              "audio": false,
+              "animated": true,
+              "suffixes": null
+            },
+            "ru": "Кнопка пропуска вступления"
+          },
+          {
+            "name": "Section pass",
+            "target": {
+              "type": "file",
+              "pattern": "section-pass",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Успех перед перерывом"
+          },
+          {
+            "name": "Section fail",
+            "target": {
+              "type": "file",
+              "pattern": "section-fail",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Неудача перед перерывом"
+          },
+          {
+            "name": "Warning/selection arrows",
+            "target": {
+              "type": "file",
+              "pattern": "play-warningarrow",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Стрелки предупреждения и выбора"
+          },
+          {
+            "name": "Warning arrows",
+            "target": {
+              "type": "file",
+              "pattern": "arrow-warning",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Предупреждающие стрелки"
+          },
+          {
+            "name": "Unranked text",
+            "target": {
+              "type": "file",
+              "pattern": "play-unranked",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Надпись «Без рейтинга»"
+          },
+          {
+            "name": "Masking border",
+            "target": {
+              "type": "file",
+              "pattern": "masking-border",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Рамка игрового поля"
+          },
+          {
+            "name": "Spinner RPM",
+            "target": {
+              "type": "file",
+              "pattern": "spinner-rpm",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Надпись «Оборотов в минуту»"
+          },
+          {
+            "name": "[skin.ini] ComboBurstRandom",
+            "target": {
+              "type": "property",
+              "section": "General",
+              "key": "ComboBurstRandom"
+            },
+            "ru": "Случайный эффект комбо [skin.ini]"
+          }
+        ],
+        "preview": [],
+        "ru": "В игре"
+      }
+    ],
+    "preview": [],
+    "ru": "Интерфейс"
+  },
+  {
+    "name": "Gameplay",
+    "children": [
+      {
+        "name": "osu!",
+        "children": [
+          {
+            "name": "Hitcircles",
+            "children": [
+              {
+                "name": "Approach circle",
+                "target": {
+                  "type": "file",
+                  "pattern": "approachcircle",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Кольцо приближения"
+              },
+              {
+                "name": "Numbers",
+                "target": {
+                  "type": "file",
+                  "pattern": "default-*",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                  ]
+                },
+                "ru": "Цифры"
+              },
+              {
+                "name": "Hitcircle",
+                "target": {
+                  "type": "file",
+                  "pattern": "hitcircle",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Круг"
+              },
+              {
+                "name": "Hitcircle overlay",
+                "target": {
+                  "type": "file",
+                  "pattern": "hitcircleoverlay",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Обводка круга"
+              },
+              {
+                "name": "Editor selection",
+                "target": {
+                  "type": "file",
+                  "pattern": "hitcircleselect",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Выделение в редакторе"
+              },
+              {
+                "name": "Target practice hitcircle",
+                "target": {
+                  "type": "file",
+                  "pattern": "target*",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Мишень Target Practice"
+              },
+              {
+                "name": "[skin.ini] HitCircleOverlayAboveNumber",
+                "target": {
+                  "type": "property",
+                  "section": "General",
+                  "key": "HitCircleOverlayAboveNumber"
+                },
+                "ru": "Обводка поверх номера [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] HitCirclePrefix",
+                "target": {
+                  "type": "property",
+                  "section": "Fonts",
+                  "key": "HitCirclePrefix"
+                },
+                "ru": "Префикс номеров кругов [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] HitCircleOverlap",
+                "target": {
+                  "type": "property",
+                  "section": "Fonts",
+                  "key": "HitCircleOverlap"
+                },
+                "ru": "Наложение цифр в круге [skin.ini]"
+              }
+            ],
+            "preview": [],
+            "ru": "Круги"
+          },
+          {
+            "name": "Sliders",
+            "children": [
+              {
+                "name": "Slider ball",
+                "target": {
+                  "type": "file",
+                  "pattern": "sliderb",
+                  "audio": false,
+                  "animated": true,
+                  "suffixes": null
+                },
+                "ru": "Шар слайдера"
+              },
+              {
+                "name": "Slider end circle",
+                "target": {
+                  "type": "file",
+                  "pattern": "sliderendcircle*",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": [
+                    "",
+                    "overlay"
+                  ]
+                },
+                "ru": "Конечный круг слайдера"
+              },
+              {
+                "name": "Slider follow circle",
+                "target": {
+                  "type": "file",
+                  "pattern": "sliderfollowcircle",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Кольцо вокруг шарика"
+              },
+              {
+                "name": "Slider tick",
+                "target": {
+                  "type": "file",
+                  "pattern": "sliderscorepoint",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Точка слайдера"
+              },
+              {
+                "name": "Slider start circle",
+                "target": {
+                  "type": "file",
+                  "pattern": "sliderstartcircle*",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": [
+                    "",
+                    "overlay"
+                  ]
+                },
+                "ru": "Начальный круг слайдера"
+              },
+              {
+                "name": "Reverse arrow",
+                "target": {
+                  "type": "file",
+                  "pattern": "reversearrow",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Стрелка разворота"
+              },
+              {
+                "name": "Legacy slider point",
+                "target": {
+                  "type": "file",
+                  "pattern": "sliderpoint*",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": [
+                    "10",
+                    "30"
+                  ]
+                },
+                "ru": "Очки слайдера (старый стиль)"
+              },
+              {
+                "name": "[skin.ini] AllowSliderBallTint",
+                "target": {
+                  "type": "property",
+                  "section": "General",
+                  "key": "AllowSliderBallTint"
+                },
+                "ru": "Окрашивание шарика слайдера [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] SliderBallFlip",
+                "target": {
+                  "type": "property",
+                  "section": "General",
+                  "key": "SliderBallFlip"
+                },
+                "ru": "Разворот шарика слайдера [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] SliderBall",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "SliderBall"
+                },
+                "ru": "Цвет шарика слайдера [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] SliderBorder",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "SliderBorder"
+                },
+                "ru": "Цвет границы слайдера [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] SliderTrackOverride",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "SliderTrackOverride"
+                },
+                "ru": "Цвет дорожки слайдера [skin.ini]"
+              }
+            ],
+            "preview": [],
+            "ru": "Слайдеры"
+          },
+          {
+            "name": "Combo Colours",
+            "children": [
+              {
+                "name": "[skin.ini] Combo1",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "Combo1"
+                },
+                "ru": "Цвет комбо 1 [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] Combo2",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "Combo2"
+                },
+                "ru": "Цвет комбо 2 [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] Combo3",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "Combo3"
+                },
+                "ru": "Цвет комбо 3 [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] Combo4",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "Combo4"
+                },
+                "ru": "Цвет комбо 4 [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] Combo5",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "Combo5"
+                },
+                "ru": "Цвет комбо 5 [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] Combo6",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "Combo6"
+                },
+                "ru": "Цвет комбо 6 [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] Combo7",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "Combo7"
+                },
+                "ru": "Цвет комбо 7 [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] Combo8",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "Combo8"
+                },
+                "ru": "Цвет комбо 8 [skin.ini]"
+              }
+            ],
+            "preview": [],
+            "ru": "Цвета комбо"
+          },
+          {
+            "name": "Spinners",
+            "children": [
+              {
+                "name": "spinner-approachcircle.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-approachcircle",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Кольцо приближения спиннера"
+              },
+              {
+                "name": "spinner-background.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-background",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Фон старого спиннера"
+              },
+              {
+                "name": "spinner-bottom.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-bottom",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Нижний слой спиннера"
+              },
+              {
+                "name": "spinner-circle.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-circle",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Диск старого спиннера"
+              },
+              {
+                "name": "spinner-clear.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-clear",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Надпись о завершении"
+              },
+              {
+                "name": "spinner-glow.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-glow",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Свечение спиннера"
+              },
+              {
+                "name": "spinner-metre.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-metre",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Шкала старого спиннера"
+              },
+              {
+                "name": "spinner-middle.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-middle",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Центр спиннера"
+              },
+              {
+                "name": "spinner-middle2.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-middle2",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Второй слой центра"
+              },
+              {
+                "name": "spinner-osu.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-osu",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Логотип osu! на спиннере"
+              },
+              {
+                "name": "spinner-spin.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-spin",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Надпись «Крути!»"
+              },
+              {
+                "name": "spinner-top.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "spinner-top",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Верхний слой спиннера"
+              },
+              {
+                "name": "[skin.ini] SpinnerFadePlayfield",
+                "target": {
+                  "type": "property",
+                  "section": "General",
+                  "key": "SpinnerFadePlayfield"
+                },
+                "ru": "Затемнение поля на спиннере [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] SpinnerNoBlink",
+                "target": {
+                  "type": "property",
+                  "section": "General",
+                  "key": "SpinnerNoBlink"
+                },
+                "ru": "Спиннер без мигания [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] SpinnerBackground",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "SpinnerBackground"
+                },
+                "ru": "Цвет фона спиннера [skin.ini]"
+              },
+              {
+                "name": "[skin.ini] StarBreakAdditive",
+                "target": {
+                  "type": "property",
+                  "section": "Colours",
+                  "key": "StarBreakAdditive"
+                },
+                "ru": "Свечение звёзд в перерыве [skin.ini]"
+              }
+            ],
+            "preview": [],
+            "ru": "Спиннеры"
+          },
+          {
+            "name": "Hit judgements",
+            "children": [
+              {
+                "name": "50",
+                "children": [
+                  {
+                    "name": "Image",
+                    "target": {
+                      "type": "file",
+                      "pattern": "hit50",
+                      "audio": false,
+                      "animated": true,
+                      "suffixes": null
+                    },
+                    "ru": "Изображение"
+                  },
+                  {
+                    "name": "Particles",
+                    "target": {
+                      "type": "file",
+                      "pattern": "particle50",
+                      "audio": false,
+                      "animated": false,
+                      "suffixes": null
+                    },
+                    "ru": "Частицы"
+                  }
+                ],
+                "preview": []
+              },
+              {
+                "name": "100",
+                "children": [
+                  {
+                    "name": "Image",
+                    "target": {
+                      "type": "file",
+                      "pattern": "hit100",
+                      "audio": false,
+                      "animated": true,
+                      "suffixes": null
+                    },
+                    "ru": "Изображение"
+                  },
+                  {
+                    "name": "Image (katsu)",
+                    "target": {
+                      "type": "file",
+                      "pattern": "hit100k",
+                      "audio": false,
+                      "animated": true,
+                      "suffixes": null
+                    },
+                    "ru": "Изображение (Katu)"
+                  },
+                  {
+                    "name": "Particles",
+                    "target": {
+                      "type": "file",
+                      "pattern": "particle100",
+                      "audio": false,
+                      "animated": false,
+                      "suffixes": null
+                    },
+                    "ru": "Частицы"
+                  }
+                ],
+                "preview": []
+              },
+              {
+                "name": "300",
+                "children": [
+                  {
+                    "name": "Image",
+                    "target": {
+                      "type": "file",
+                      "pattern": "hit300",
+                      "audio": false,
+                      "animated": true,
+                      "suffixes": null
+                    },
+                    "ru": "Изображение"
+                  },
+                  {
+                    "name": "Image (katsu)",
+                    "target": {
+                      "type": "file",
+                      "pattern": "hit300k",
+                      "audio": false,
+                      "animated": true,
+                      "suffixes": null
+                    },
+                    "ru": "Изображение (Katu)"
+                  },
+                  {
+                    "name": "Image (geki)",
+                    "target": {
+                      "type": "file",
+                      "pattern": "hit300g",
+                      "audio": false,
+                      "animated": true,
+                      "suffixes": null
+                    },
+                    "ru": "Изображение (Geki)"
+                  },
+                  {
+                    "name": "Particles",
+                    "target": {
+                      "type": "file",
+                      "pattern": "particle300",
+                      "audio": false,
+                      "animated": false,
+                      "suffixes": null
+                    },
+                    "ru": "Частицы"
+                  }
+                ],
+                "preview": []
+              },
+              {
+                "name": "Miss",
+                "target": {
+                  "type": "file",
+                  "pattern": "hit0",
+                  "audio": false,
+                  "animated": true,
+                  "suffixes": null
+                },
+                "ru": "Промах"
+              }
+            ],
+            "preview": [],
+            "ru": "Оценки попаданий"
+          },
+          {
+            "name": "Follow points",
+            "target": {
+              "type": "file",
+              "pattern": "followpoint",
+              "audio": false,
+              "animated": true,
+              "suffixes": null
+            },
+            "ru": "Точки между нотами"
+          },
+          {
+            "name": "Combo burst",
+            "target": {
+              "type": "file",
+              "pattern": "comboburst",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Эффект серии комбо"
+          }
+        ],
+        "preview": []
+      },
+      {
+        "name": "osu!taiko",
+        "children": [
+          {
+            "name": "Hit judgements",
+            "children": [
+              {
+                "name": "Miss",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-hit0",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Промах"
+              },
+              {
+                "name": "100",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-hit100",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                }
+              },
+              {
+                "name": "100k",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-hit100k",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                }
+              },
+              {
+                "name": "300",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-hit300",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                }
+              },
+              {
+                "name": "300g",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-hit300g",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                }
+              },
+              {
+                "name": "300k",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-hit300k",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                }
+              }
+            ],
+            "preview": [],
+            "ru": "Оценки попаданий"
+          },
+          {
+            "name": "Pippidon",
+            "children": [
+              {
+                "name": "pippidonclear.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "pippidonclear",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Pippidon при успехе"
+              },
+              {
+                "name": "pippidonfail.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "pippidonfail",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Pippidon при неудаче"
+              },
+              {
+                "name": "pippidonfailidle.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "pippidonfailidle",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Pippidon в покое при неудаче"
+              },
+              {
+                "name": "pippidonfailkiai.png",
+                "target": {
+                  "type": "file",
+                  "pattern": "pippidonfailkiai",
+                  "audio": false,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Pippidon в kiai при неудаче"
+              }
+            ],
+            "preview": []
+          },
+          {
+            "name": "spinner-warning.png",
+            "target": {
+              "type": "file",
+              "pattern": "spinner-warning",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Предупреждение о спиннере"
+          },
+          {
+            "name": "taiko-bar-left.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-bar-left",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Левая часть дорожки"
+          },
+          {
+            "name": "taiko-bar-right-glow.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-bar-right-glow",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Подсветка правой части дорожки"
+          },
+          {
+            "name": "taiko-bar-right.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-bar-right",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Правая часть дорожки"
+          },
+          {
+            "name": "taiko-barline.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-barline",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Линия такта"
+          },
+          {
+            "name": "taiko-drum-inner.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-drum-inner",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Центр барабана"
+          },
+          {
+            "name": "taiko-drum-outer.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-drum-outer",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Обод барабана"
+          },
+          {
+            "name": "taiko-flower-group.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-flower-group",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Цветы барабана"
+          },
+          {
+            "name": "taiko-glow.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-glow",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Подсветка барабана"
+          },
+          {
+            "name": "taiko-roll-end.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-roll-end",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Конец барабанной дроби"
+          },
+          {
+            "name": "taiko-roll-middle.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-roll-middle",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Середина барабанной дроби"
+          },
+          {
+            "name": "taiko-slider-fail.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-slider-fail",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Неудачный спиннер"
+          },
+          {
+            "name": "taiko-slider.png",
+            "target": {
+              "type": "file",
+              "pattern": "taiko-slider",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Спиннер"
+          },
+          {
+            "name": "taikobigcircle*.png",
+            "target": {
+              "type": "file",
+              "pattern": "taikobigcircle*",
+              "audio": false,
+              "animated": false,
+              "suffixes": [
+                "",
+                "overlay"
+              ]
+            },
+            "ru": "Большие ноты"
+          },
+          {
+            "name": "taikohitcircle*.png",
+            "target": {
+              "type": "file",
+              "pattern": "taikohitcircle*",
+              "audio": false,
+              "animated": false,
+              "suffixes": [
+                "",
+                "overlay"
+              ]
+            },
+            "ru": "Обычные ноты"
+          }
+        ],
+        "preview": []
+      },
+      {
+        "name": "osu!catch",
+        "children": [
+          {
+            "name": "comboburst-fruits.png",
+            "target": {
+              "type": "file",
+              "pattern": "comboburst-fruits",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Эффект серии комбо"
+          },
+          {
+            "name": "fruit-apple*.png",
+            "target": {
+              "type": "file",
+              "pattern": "fruit-apple*",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Яблоки"
+          },
+          {
+            "name": "fruit-bananas*.png",
+            "target": {
+              "type": "file",
+              "pattern": "fruit-bananas*",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Бананы"
+          },
+          {
+            "name": "fruit-catcher-fail.png",
+            "target": {
+              "type": "file",
+              "pattern": "fruit-catcher-fail",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Ловец при промахе"
+          },
+          {
+            "name": "fruit-catcher-idle.png",
+            "target": {
+              "type": "file",
+              "pattern": "fruit-catcher-idle",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Ловец в покое"
+          },
+          {
+            "name": "fruit-catcher-kiai.png",
+            "target": {
+              "type": "file",
+              "pattern": "fruit-catcher-kiai",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Ловец в режиме kiai"
+          },
+          {
+            "name": "fruit-drop*.png",
+            "target": {
+              "type": "file",
+              "pattern": "fruit-drop*",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Капли"
+          },
+          {
+            "name": "fruit-grapes*.png",
+            "target": {
+              "type": "file",
+              "pattern": "fruit-grapes*",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Виноград"
+          },
+          {
+            "name": "fruit-orange*.png",
+            "target": {
+              "type": "file",
+              "pattern": "fruit-orange*",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Апельсины"
+          },
+          {
+            "name": "fruit-pear*.png",
+            "target": {
+              "type": "file",
+              "pattern": "fruit-pear*",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Груши"
+          },
+          {
+            "name": "fruit-ryuuta.png",
+            "target": {
+              "type": "file",
+              "pattern": "fruit-ryuuta",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Ловец Ryuta"
+          },
+          {
+            "name": "[skin.ini] HyperDash",
+            "target": {
+              "type": "property",
+              "section": "CatchTheBeat",
+              "key": "HyperDash"
+            },
+            "ru": "Цвет рывка [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] HyperDashFruit",
+            "target": {
+              "type": "property",
+              "section": "CatchTheBeat",
+              "key": "HyperDashFruit"
+            },
+            "ru": "Цвет фрукта для рывка [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] HyperDashAfterImage",
+            "target": {
+              "type": "property",
+              "section": "CatchTheBeat",
+              "key": "HyperDashAfterImage"
+            },
+            "ru": "Цвет следа рывка [skin.ini]"
+          }
+        ],
+        "preview": []
+      },
+      {
+        "name": "osu!mania",
+        "children": [
+          {
+            "name": "comboburst-mania.png",
+            "target": {
+              "type": "file",
+              "pattern": "comboburst-mania",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Эффект серии комбо"
+          },
+          {
+            "name": "mania*.png",
+            "target": {
+              "type": "file",
+              "pattern": "mania*",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Ноты и клавиши"
+          },
+          {
+            "name": "lighting*.png",
+            "target": {
+              "type": "file",
+              "pattern": "lighting*",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Подсветка попаданий"
+          },
+          {
+            "name": "[skin.ini] Keys: 1",
+            "target": {
+              "type": "section",
+              "section": "Mania",
+              "key": "Keys",
+              "value": "1"
+            },
+            "ru": "Раскладка 1K [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] Keys: 2",
+            "target": {
+              "type": "section",
+              "section": "Mania",
+              "key": "Keys",
+              "value": "2"
+            },
+            "ru": "Раскладка 2K [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] Keys: 3",
+            "target": {
+              "type": "section",
+              "section": "Mania",
+              "key": "Keys",
+              "value": "3"
+            },
+            "ru": "Раскладка 3K [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] Keys: 4",
+            "target": {
+              "type": "section",
+              "section": "Mania",
+              "key": "Keys",
+              "value": "4"
+            },
+            "ru": "Раскладка 4K [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] Keys: 5",
+            "target": {
+              "type": "section",
+              "section": "Mania",
+              "key": "Keys",
+              "value": "5"
+            },
+            "ru": "Раскладка 5K [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] Keys: 6",
+            "target": {
+              "type": "section",
+              "section": "Mania",
+              "key": "Keys",
+              "value": "6"
+            },
+            "ru": "Раскладка 6K [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] Keys: 7",
+            "target": {
+              "type": "section",
+              "section": "Mania",
+              "key": "Keys",
+              "value": "7"
+            },
+            "ru": "Раскладка 7K [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] Keys: 8",
+            "target": {
+              "type": "section",
+              "section": "Mania",
+              "key": "Keys",
+              "value": "8"
+            },
+            "ru": "Раскладка 8K [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] Keys: 9",
+            "target": {
+              "type": "section",
+              "section": "Mania",
+              "key": "Keys",
+              "value": "9"
+            },
+            "ru": "Раскладка 9K [skin.ini]"
+          }
+        ],
+        "preview": []
+      },
+      {
+        "name": "[skin.ini] AnimationFramerate",
+        "target": {
+          "type": "property",
+          "section": "General",
+          "key": "AnimationFramerate"
+        },
+        "ru": "Частота кадров анимации [skin.ini]"
+      }
+    ],
+    "preview": [],
+    "ru": "Игровые элементы"
+  },
+  {
+    "name": "Cursor",
+    "children": [
+      {
+        "name": "Head",
+        "children": [
+          {
+            "name": "cursor.png",
+            "target": {
+              "type": "file",
+              "pattern": "cursor",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Изображение курсора"
+          },
+          {
+            "name": "[skin.ini] CursorCentre",
+            "target": {
+              "type": "property",
+              "section": "General",
+              "key": "CursorCentre"
+            },
+            "ru": "Курсор по центру изображения [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] CursorExpand",
+            "target": {
+              "type": "property",
+              "section": "General",
+              "key": "CursorExpand"
+            },
+            "ru": "Увеличение курсора при нажатии [skin.ini]"
+          },
+          {
+            "name": "[skin.ini] CursorRotate",
+            "target": {
+              "type": "property",
+              "section": "General",
+              "key": "CursorRotate"
+            },
+            "ru": "Вращение курсора [skin.ini]"
+          }
+        ],
+        "preview": [],
+        "ru": "Основной курсор"
+      },
+      {
+        "name": "Trail",
+        "children": [
+          {
+            "name": "cursortrail.png",
+            "target": {
+              "type": "file",
+              "pattern": "cursortrail",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Обычный след"
+          },
+          {
+            "name": "cursormiddle.png",
+            "target": {
+              "type": "file",
+              "pattern": "cursormiddle",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Непрерывный след"
+          },
+          {
+            "name": "star2.png",
+            "target": {
+              "type": "file",
+              "pattern": "star2",
+              "audio": false,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Звёздочки курсора"
+          },
+          {
+            "name": "[skin.ini] CursorTrailRotate",
+            "target": {
+              "type": "property",
+              "section": "General",
+              "key": "CursorTrailRotate"
+            },
+            "ru": "Вращение следа курсора [skin.ini]"
+          }
+        ],
+        "preview": [],
+        "ru": "След курсора"
+      },
+      {
+        "name": "cursor-smoke.png",
+        "target": {
+          "type": "file",
+          "pattern": "cursor-smoke",
+          "audio": false,
+          "animated": false,
+          "suffixes": null
+        },
+        "ru": "Дым курсора"
+      }
+    ],
+    "preview": [],
+    "ru": "Курсор"
+  },
+  {
+    "name": "Hitsounds",
+    "children": [
+      {
+        "name": "Normal",
+        "children": [
+          {
+            "name": "Clap",
+            "target": {
+              "type": "file",
+              "pattern": "normal-hitclap",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Хлопок (clap)"
+          },
+          {
+            "name": "Finish",
+            "target": {
+              "type": "file",
+              "pattern": "normal-hitfinish",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Тарелка (finish)"
+          },
+          {
+            "name": "Normal",
+            "target": {
+              "type": "file",
+              "pattern": "normal-hitnormal",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Основной удар (normal)"
+          },
+          {
+            "name": "Whistle",
+            "target": {
+              "type": "file",
+              "pattern": "normal-hitwhistle",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Свист (whistle)"
+          },
+          {
+            "name": "Slider slide",
+            "target": {
+              "type": "file",
+              "pattern": "normal-sliderslide",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Скольжение по слайдеру"
+          },
+          {
+            "name": "Slider tick",
+            "target": {
+              "type": "file",
+              "pattern": "normal-slidertick",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Тик слайдера"
+          },
+          {
+            "name": "Slider whistle",
+            "target": {
+              "type": "file",
+              "pattern": "normal-sliderwhistle",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Свист слайдера"
+          }
+        ],
+        "preview": [
+          "normal-hitnormal",
+          "normal-hitclap",
+          "normal-hitwhistle",
+          "normal-hitfinish"
+        ],
+        "ru": "Набор Normal"
+      },
+      {
+        "name": "Soft",
+        "children": [
+          {
+            "name": "Clap",
+            "target": {
+              "type": "file",
+              "pattern": "soft-hitclap",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Хлопок (clap)"
+          },
+          {
+            "name": "Finish",
+            "target": {
+              "type": "file",
+              "pattern": "soft-hitfinish",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Тарелка (finish)"
+          },
+          {
+            "name": "Normal",
+            "target": {
+              "type": "file",
+              "pattern": "soft-hitnormal",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Основной удар (normal)"
+          },
+          {
+            "name": "Whistle",
+            "target": {
+              "type": "file",
+              "pattern": "soft-hitwhistle",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Свист (whistle)"
+          },
+          {
+            "name": "Slider slide",
+            "target": {
+              "type": "file",
+              "pattern": "soft-sliderslide",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Скольжение по слайдеру"
+          },
+          {
+            "name": "Slider tick",
+            "target": {
+              "type": "file",
+              "pattern": "soft-slidertick",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Тик слайдера"
+          },
+          {
+            "name": "Slider whistle",
+            "target": {
+              "type": "file",
+              "pattern": "soft-sliderwhistle",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Свист слайдера"
+          }
+        ],
+        "preview": [
+          "soft-hitnormal",
+          "soft-hitclap",
+          "soft-hitwhistle",
+          "soft-hitfinish"
+        ],
+        "ru": "Набор Soft"
+      },
+      {
+        "name": "Drum",
+        "children": [
+          {
+            "name": "Clap",
+            "target": {
+              "type": "file",
+              "pattern": "drum-hitclap",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Хлопок (clap)"
+          },
+          {
+            "name": "Finish",
+            "target": {
+              "type": "file",
+              "pattern": "drum-hitfinish",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Тарелка (finish)"
+          },
+          {
+            "name": "Normal",
+            "target": {
+              "type": "file",
+              "pattern": "drum-hitnormal",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Основной удар (normal)"
+          },
+          {
+            "name": "Whistle",
+            "target": {
+              "type": "file",
+              "pattern": "drum-hitwhistle",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Свист (whistle)"
+          },
+          {
+            "name": "Slider slide",
+            "target": {
+              "type": "file",
+              "pattern": "drum-sliderslide",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Скольжение по слайдеру"
+          },
+          {
+            "name": "Slider tick",
+            "target": {
+              "type": "file",
+              "pattern": "drum-slidertick",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Тик слайдера"
+          },
+          {
+            "name": "Slider whistle",
+            "target": {
+              "type": "file",
+              "pattern": "drum-sliderwhistle",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Свист слайдера"
+          }
+        ],
+        "preview": [
+          "drum-hitnormal",
+          "drum-hitclap",
+          "drum-hitwhistle",
+          "drum-hitfinish"
+        ],
+        "ru": "Набор Drum"
+      },
+      {
+        "name": "Spinner",
+        "children": [
+          {
+            "name": "Bonus",
+            "target": {
+              "type": "file",
+              "pattern": "spinnerbonus",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Бонус"
+          },
+          {
+            "name": "Spin",
+            "target": {
+              "type": "file",
+              "pattern": "spinnerspin",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Вращение"
+          }
+        ],
+        "preview": [
+          "spinnerspin",
+          "spinnerbonus"
+        ],
+        "ru": "Спиннер"
+      },
+      {
+        "name": "Nightcore beats",
+        "children": [
+          {
+            "name": "Clap",
+            "target": {
+              "type": "file",
+              "pattern": "nightcore-clap",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Хлопок (clap)"
+          },
+          {
+            "name": "Finish",
+            "target": {
+              "type": "file",
+              "pattern": "nightcore-finish",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Тарелка (finish)"
+          },
+          {
+            "name": "Hat",
+            "target": {
+              "type": "file",
+              "pattern": "nightcore-hat",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Хай-хэт"
+          },
+          {
+            "name": "Kick",
+            "target": {
+              "type": "file",
+              "pattern": "nightcore-kick",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Бас-барабан"
+          }
+        ],
+        "preview": [
+          "nightcore-clap",
+          "nightcore-kick",
+          "nightcore-hat",
+          "nightcore-finish"
+        ],
+        "ru": "Ритм Nightcore"
+      },
+      {
+        "name": "osu!taiko specific",
+        "children": [
+          {
+            "name": "Normal",
+            "children": [
+              {
+                "name": "Normal",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-normal-hitnormal",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Основной удар (normal)"
+              },
+              {
+                "name": "Clap",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-normal-hitclap",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Хлопок (clap)"
+              },
+              {
+                "name": "Finish",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-normal-hitfinish",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Тарелка (finish)"
+              },
+              {
+                "name": "Whistle",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-normal-hitwhistle",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Свист (whistle)"
+              }
+            ],
+            "preview": [
+              "taiko-normal-hitnormal",
+              "taiko-normal-hitclap",
+              "taiko-normal-hitwhistle",
+              "taiko-normal-hitfinish"
+            ],
+            "ru": "Набор Normal"
+          },
+          {
+            "name": "Soft",
+            "children": [
+              {
+                "name": "Normal",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-soft-hitnormal",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Основной удар (normal)"
+              },
+              {
+                "name": "Clap",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-soft-hitclap",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Хлопок (clap)"
+              },
+              {
+                "name": "Finish",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-soft-hitfinish",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Тарелка (finish)"
+              },
+              {
+                "name": "Whistle",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-soft-hitwhistle",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Свист (whistle)"
+              }
+            ],
+            "preview": [
+              "taiko-soft-hitnormal",
+              "taiko-soft-hitclap",
+              "taiko-soft-hitwhistle",
+              "taiko-soft-hitfinish"
+            ],
+            "ru": "Набор Soft"
+          },
+          {
+            "name": "Drum",
+            "children": [
+              {
+                "name": "Normal",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-drum-hitnormal",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Основной удар (normal)"
+              },
+              {
+                "name": "Clap",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-drum-hitclap",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Хлопок (clap)"
+              },
+              {
+                "name": "Finish",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-drum-hitfinish",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Тарелка (finish)"
+              },
+              {
+                "name": "Whistle",
+                "target": {
+                  "type": "file",
+                  "pattern": "taiko-drum-hitwhistle",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Свист (whistle)"
+              }
+            ],
+            "preview": [
+              "taiko-drum-hitnormal",
+              "taiko-drum-hitclap",
+              "taiko-drum-hitwhistle",
+              "taiko-drum-hitfinish"
+            ],
+            "ru": "Набор Drum"
+          }
+        ],
+        "preview": [
+          "taiko-normal-hitnormal",
+          "taiko-soft-hitnormal",
+          "taiko-drum-hitnormal"
+        ],
+        "ru": "Звуки osu!taiko"
+      },
+      {
+        "name": "Combo break",
+        "target": {
+          "type": "file",
+          "pattern": "combobreak",
+          "audio": true,
+          "animated": false,
+          "suffixes": null
+        },
+        "ru": "Срыв комбо"
+      },
+      {
+        "name": "Combo burst",
+        "target": {
+          "type": "file",
+          "pattern": "comboburst",
+          "audio": true,
+          "animated": false,
+          "suffixes": null
+        },
+        "ru": "Эффект серии комбо"
+      },
+      {
+        "name": "[skin.ini] CustomComboBurstSounds",
+        "target": {
+          "type": "property",
+          "section": "General",
+          "key": "CustomComboBurstSounds"
+        },
+        "ru": "Свои звуки серии комбо [skin.ini]"
+      },
+      {
+        "name": "[skin.ini] LayeredHitSounds",
+        "target": {
+          "type": "property",
+          "section": "General",
+          "key": "LayeredHitSounds"
+        },
+        "ru": "Наложение звуков попаданий [skin.ini]"
+      },
+      {
+        "name": "[skin.ini] SpinnerFrequencyModulate",
+        "target": {
+          "type": "property",
+          "section": "General",
+          "key": "SpinnerFrequencyModulate"
+        },
+        "ru": "Изменение тона спиннера [skin.ini]"
+      }
+    ],
+    "preview": [
+      "normal-hitnormal",
+      "soft-hitnormal",
+      "drum-hitnormal",
+      "combobreak"
+    ],
+    "ru": "Звуки попаданий"
+  },
+  {
+    "name": "Menu Sounds",
+    "children": [
+      {
+        "name": "Interface",
+        "children": [
+          {
+            "name": "Welcome to osu!",
+            "target": {
+              "type": "file",
+              "pattern": "welcome",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Приветствие osu!"
+          },
+          {
+            "name": "See ya next time!",
+            "target": {
+              "type": "file",
+              "pattern": "seeya",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Прощание"
+          },
+          {
+            "name": "Menu play button",
+            "target": {
+              "type": "file",
+              "pattern": "menu-play-*",
+              "audio": true,
+              "animated": false,
+              "suffixes": [
+                "hover",
+                "click"
+              ]
+            },
+            "ru": "Кнопка «Играть»"
+          },
+          {
+            "name": "Menu solo button",
+            "target": {
+              "type": "file",
+              "pattern": "menu-freeplay-*",
+              "audio": true,
+              "animated": false,
+              "suffixes": [
+                "hover",
+                "click"
+              ]
+            },
+            "ru": "Кнопка «Одиночная игра»"
+          },
+          {
+            "name": "Menu multi button",
+            "target": {
+              "type": "file",
+              "pattern": "menu-multiplayer-*",
+              "audio": true,
+              "animated": false,
+              "suffixes": [
+                "hover",
+                "click"
+              ]
+            },
+            "ru": "Кнопка «Мультиплеер»"
+          },
+          {
+            "name": "Menu charts button",
+            "target": {
+              "type": "file",
+              "pattern": "menu-charts-*",
+              "audio": true,
+              "animated": false,
+              "suffixes": [
+                "hover",
+                "click"
+              ]
+            },
+            "ru": "Кнопка «Рейтинг»"
+          },
+          {
+            "name": "Menu edit button",
+            "target": {
+              "type": "file",
+              "pattern": "menu-edit-*",
+              "audio": true,
+              "animated": false,
+              "suffixes": [
+                "hover",
+                "click"
+              ]
+            },
+            "ru": "Кнопка «Редактор»"
+          },
+          {
+            "name": "Menu options button",
+            "target": {
+              "type": "file",
+              "pattern": "menu-options-*",
+              "audio": true,
+              "animated": false,
+              "suffixes": [
+                "hover",
+                "click"
+              ]
+            },
+            "ru": "Кнопка «Настройки»"
+          },
+          {
+            "name": "Menu exit button",
+            "target": {
+              "type": "file",
+              "pattern": "menu-exit-*",
+              "audio": true,
+              "animated": false,
+              "suffixes": [
+                "hover",
+                "click"
+              ]
+            },
+            "ru": "Кнопка «Выход»"
+          },
+          {
+            "name": "Menu osu!direct button",
+            "target": {
+              "type": "file",
+              "pattern": "menu-direct-*",
+              "audio": true,
+              "animated": false,
+              "suffixes": [
+                "hover",
+                "click"
+              ]
+            },
+            "ru": "Кнопка osu!direct"
+          },
+          {
+            "name": "Menu back button",
+            "target": {
+              "type": "file",
+              "pattern": "menu-back-*",
+              "audio": true,
+              "animated": false,
+              "suffixes": [
+                "hover",
+                "click"
+              ]
+            },
+            "ru": "Кнопка «Назад»"
+          },
+          {
+            "name": "Applause",
+            "target": {
+              "type": "file",
+              "pattern": "applause",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Аплодисменты"
+          },
+          {
+            "name": "Back button click",
+            "target": {
+              "type": "file",
+              "pattern": "back-button-click",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Нажатие «Назад»"
+          },
+          {
+            "name": "Back button hover",
+            "target": {
+              "type": "file",
+              "pattern": "back-button-hover",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Наведение на «Назад»"
+          },
+          {
+            "name": "Check off",
+            "target": {
+              "type": "file",
+              "pattern": "check-off",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Снятие флажка"
+          },
+          {
+            "name": "Check on",
+            "target": {
+              "type": "file",
+              "pattern": "check-on",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Установка флажка"
+          },
+          {
+            "name": "Close tab",
+            "target": {
+              "type": "file",
+              "pattern": "click-close",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Закрытие вкладки"
+          },
+          {
+            "name": "Short confirm",
+            "target": {
+              "type": "file",
+              "pattern": "click-short-confirm",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Подтверждение выбора"
+          },
+          {
+            "name": "Short hover",
+            "target": {
+              "type": "file",
+              "pattern": "click-short",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Наведение на пункт меню"
+          },
+          {
+            "name": "Menu cookie heartbeat",
+            "target": {
+              "type": "file",
+              "pattern": "heartbeat",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Пульсация логотипа osu!"
+          },
+          {
+            "name": "Chat message send",
+            "target": {
+              "type": "file",
+              "pattern": "key-confirm",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Отправка сообщения"
+          },
+          {
+            "name": "Text cursor move",
+            "target": {
+              "type": "file",
+              "pattern": "key-movement",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Перемещение текстового курсора"
+          },
+          {
+            "name": "Backspace",
+            "target": {
+              "type": "file",
+              "pattern": "key-delete",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Удаление символа"
+          },
+          {
+            "name": "Typing sounds",
+            "target": {
+              "type": "file",
+              "pattern": "key-press-*",
+              "audio": true,
+              "animated": false,
+              "suffixes": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ]
+            },
+            "ru": "Набор текста"
+          },
+          {
+            "name": "Multiplayer",
+            "target": {
+              "type": "file",
+              "pattern": "match-*",
+              "audio": true,
+              "animated": false,
+              "suffixes": [
+                "confirm",
+                "join",
+                "leave",
+                "ready",
+                "notready",
+                "start"
+              ]
+            },
+            "ru": "Лобби мультиплеера"
+          },
+          {
+            "name": "Menu back button (alt)",
+            "target": {
+              "type": "file",
+              "pattern": "menuback",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Возврат в предыдущее меню"
+          },
+          {
+            "name": "Difficulty hover",
+            "target": {
+              "type": "file",
+              "pattern": "menuclick",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Наведение на сложность"
+          },
+          {
+            "name": "Scene switch",
+            "target": {
+              "type": "file",
+              "pattern": "menuhit",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Смена экрана"
+          },
+          {
+            "name": "Metronome",
+            "target": {
+              "type": "file",
+              "pattern": "metronomelow",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Метроном"
+          },
+          {
+            "name": "Multiplayer skip",
+            "target": {
+              "type": "file",
+              "pattern": "multi-skipped",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Пропуск в мультиплеере"
+          },
+          {
+            "name": "Expand",
+            "target": {
+              "type": "file",
+              "pattern": "select-expand",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Развернуть"
+          },
+          {
+            "name": "Difficulty select",
+            "target": {
+              "type": "file",
+              "pattern": "select-difficulty",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Выбор сложности"
+          },
+          {
+            "name": "Screenshot",
+            "target": {
+              "type": "file",
+              "pattern": "shutter",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Снимок экрана"
+          },
+          {
+            "name": "Slider bar",
+            "target": {
+              "type": "file",
+              "pattern": "sliderbar",
+              "audio": true,
+              "animated": false,
+              "suffixes": null
+            },
+            "ru": "Ползунок"
+          }
+        ],
+        "preview": [],
+        "ru": "Интерфейс"
+      },
+      {
+        "name": "In-game",
+        "children": [
+          {
+            "name": "Countdown",
+            "children": [
+              {
+                "name": "Ready?",
+                "target": {
+                  "type": "file",
+                  "pattern": "readys",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Готовы?"
+              },
+              {
+                "name": "3",
+                "target": {
+                  "type": "file",
+                  "pattern": "count3s",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                }
+              },
+              {
+                "name": "2",
+                "target": {
+                  "type": "file",
+                  "pattern": "count2s",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                }
+              },
+              {
+                "name": "1",
+                "target": {
+                  "type": "file",
+                  "pattern": "count1s",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                }
+              },
+              {
+                "name": "Go!",
+                "target": {
+                  "type": "file",
+                  "pattern": "gos",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Начали!"
+              }
+            ],
+            "preview": [
+              "readys",
+              "count3s",
+              "count2s",
+              "count1s",
+              "gos"
+            ],
+            "ru": "Обратный отсчёт"
+          },
+          {
+            "name": "Pause/fail screen",
+            "children": [
+              {
+                "name": "Fail sound",
+                "target": {
+                  "type": "file",
+                  "pattern": "failsound",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Звук неудачной попытки"
+              },
+              {
+                "name": "Pause music",
+                "target": {
+                  "type": "file",
+                  "pattern": "pause-loop",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Музыка на паузе"
+              },
+              {
+                "name": "Button hover",
+                "target": {
+                  "type": "file",
+                  "pattern": "pause-hover",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Наведение на кнопку"
+              },
+              {
+                "name": "Continue button",
+                "target": {
+                  "type": "file",
+                  "pattern": "pause-continue-*",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": [
+                    "hover",
+                    "click"
+                  ]
+                },
+                "ru": "Продолжить"
+              },
+              {
+                "name": "Retry button",
+                "target": {
+                  "type": "file",
+                  "pattern": "pause-retry-*",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": [
+                    "hover",
+                    "click"
+                  ]
+                },
+                "ru": "Повторить"
+              },
+              {
+                "name": "Back button",
+                "target": {
+                  "type": "file",
+                  "pattern": "pause-back-*",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": [
+                    "hover",
+                    "click"
+                  ]
+                },
+                "ru": "Назад"
+              }
+            ],
+            "preview": [],
+            "ru": "Пауза и неудачная попытка"
+          },
+          {
+            "name": "Section pass/fail",
+            "children": [
+              {
+                "name": "Section fail",
+                "target": {
+                  "type": "file",
+                  "pattern": "sectionfail",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Неудача перед перерывом"
+              },
+              {
+                "name": "Section pass",
+                "target": {
+                  "type": "file",
+                  "pattern": "sectionpass",
+                  "audio": true,
+                  "animated": false,
+                  "suffixes": null
+                },
+                "ru": "Успех перед перерывом"
+              }
+            ],
+            "preview": [
+              "sectionpass",
+              "sectionfail"
+            ],
+            "ru": "Сигналы перед перерывом"
+          }
+        ],
+        "preview": [],
+        "ru": "В игре"
+      }
+    ],
+    "preview": [],
+    "ru": "Звуки меню"
+  }
+]

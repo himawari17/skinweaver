@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<defs>
+ <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#55293c"/><stop offset="1" stop-color="#22141e"/></linearGradient>
+ <linearGradient id="core" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7cfdc"/><stop offset="1" stop-color="#d0a3dd"/></linearGradient>
+ <radialGradient id="sheen" cx="0.36" cy="0.3" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+</defs>
+<rect x="8" y="8" width="240" height="240" rx="56" fill="url(#tile)"/>
+<rect x="8.5" y="8.5" width="239" height="239" rx="55.5" fill="none" stroke="#ffd8e4" stroke-opacity=".12"/>
+<circle cx="128" cy="128" r="92" fill="none" stroke="#ee86ba" stroke-width="22" stroke-dasharray="72.3 72.3"/><circle cx="128" cy="128" r="92" fill="none" stroke="#c9a8ff" stroke-width="22" stroke-dasharray="72.3 72.3" stroke-dashoffset="72.3"/>
+<circle cx="128" cy="133" r="57" fill="#000" opacity=".3"/>
+<circle cx="128" cy="128" r="56" fill="url(#core)"/>
+<circle cx="128" cy="128" r="56" fill="url(#sheen)"/>
+<circle cx="128" cy="128" r="56" fill="none" stroke="#ffd8e4" stroke-width="12"/>
+<circle cx="128" cy="128" r="17" fill="#492532"/>
+
+</svg>

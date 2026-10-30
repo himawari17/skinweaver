@@ -1,0 +1,9 @@
+/target/
+/dist/
+*.pdb
+
+# Design-system notes and review material stay local, not on GitHub
+/DESIGN.md
+/PRODUCT.md
+/.impeccable/
+/docs/DESIGN_REVIEW.md
