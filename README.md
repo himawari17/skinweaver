@@ -42,14 +42,14 @@ Copy, rename, delete and export to `.osk`.
 
 ## Installation
 
-1. Download `skinweaver-windows-x64.zip` from [Releases](https://github.com/himawari17/Skinweaver/releases).
-2. Extract it and run `skinweaver.exe` - no installer and no Rust needed.
+1. Download `skinweaver.exe` from [Releases](https://github.com/himawari17/skinweaver/releases).
+2. Run `skinweaver.exe` - no installer and no Rust needed.
 3. On first start, select your osu! folder that contains `Skins`
    (usually `%LOCALAPPDATA%\osu!` or `D:\Games\osu!`).
 
 Folder-based osu! (stable) skins are supported. Direct import from osu!lazer's internal library is not available.
 
-To try it out, run in PowerShell from the extracted folder:
+To try it out, run in PowerShell from the folder containing `skinweaver.exe`:
 
 ```powershell
 .\skinweaver.exe --demo
@@ -180,15 +180,15 @@ This is an unofficial fan project, not affiliated with or endorsed by ppy Pty Lt
 
 ### Установка
 
-1. Скачай `skinweaver-windows-x64.zip` со страницы [Releases](https://github.com/himawari17/Skinweaver/releases).
-2. Распакуй архив и запусти `skinweaver.exe` - установка и Rust для запуска не нужны.
+1. Скачай `skinweaver.exe` со страницы [Releases](https://github.com/himawari17/skinweaver/releases).
+2. Запусти `skinweaver.exe` - установка и Rust для запуска не нужны.
 3. При первом запуске укажи папку osu!, внутри которой лежит `Skins`
    (обычно `%LOCALAPPDATA%\osu!` или `D:\Games\osu!`).
 
 Приложение работает с папочными скинами osu! (stable). Прямой импорт из внутренней
 библиотеки osu!lazer не предусмотрен.
 
-Для знакомства запусти в PowerShell из распакованной папки:
+Для знакомства запусти в PowerShell из папки с `skinweaver.exe`:
 
 ```powershell
 .\skinweaver.exe --demo --lang ru
