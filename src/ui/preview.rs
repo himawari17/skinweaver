@@ -63,6 +63,54 @@ struct Side {
     origin: Origin,
 }
 
+fn variants_scroll(ui: &mut egui::Ui, language: Language, contents: impl FnOnce(&mut egui::Ui)) {
+    const ID: &str = "variants_list";
+    let id = ui.make_persistent_id(egui::IdSalt::new(ID));
+    let scrolled = egui::scroll_area::State::load(ui.ctx(), id)
+        .is_some_and(|state| state.clamped_offset().y > 0.5);
+    let mut height = ui.available_height();
+    if scrolled {
+        height -= CONTROL + ui.spacing().item_spacing.y;
+    }
+
+    let content_style = ui.style().clone();
+    let scroll = &mut ui.spacing_mut().scroll;
+    scroll.floating = false;
+    scroll.bar_width = 10.0;
+    scroll.bar_inner_margin = 8.0;
+    scroll.handle_min_length = 28.0;
+    let visuals = ui.visuals_mut();
+    visuals.extreme_bg_color = BG_300;
+    visuals.widgets.inactive.bg_fill = LINE_200;
+    visuals.widgets.hovered.bg_fill = INK_MUTED;
+    visuals.widgets.active.bg_fill = ACCENT_LINE;
+    let output = egui::ScrollArea::vertical()
+        .id_salt(ID)
+        .auto_shrink([false, false])
+        .min_scrolled_height(1.0)
+        .max_height(height.max(1.0))
+        .show(ui, |ui| {
+            ui.set_style(content_style);
+            ui.set_width(ui.available_width());
+            contents(ui);
+        });
+    if scrolled {
+        ui.horizontal(|ui| {
+            ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
+                let label = language.text("Наверх", "Back to top");
+                if btn(Kind::Secondary, label)
+                    .icon(icons::chevron_up())
+                    .show(ui)
+                    .clicked()
+                {
+                    egui::scroll_area::State::default().store(ui.ctx(), output.id);
+                    ui.ctx().request_repaint();
+                }
+            });
+        });
+    }
+}
+
 impl App {
     pub(crate) fn preview_panel(&mut self, ui: &mut egui::Ui, opacity: f32) {
         let compact = ui.ctx().content_rect().width() < 900.0;
@@ -91,6 +139,10 @@ impl App {
             )
             .show(ui, |ui| {
                 ui.multiply_opacity(opacity);
+                if self.stage_mode() && self.preview_tab != PreviewTab::Element {
+                    variants_scroll(ui, self.settings.language, |ui| self.editor_preview(ui));
+                    return;
+                }
                 // Only the taller side panel can keep the skin header pinned.
                 if !compact && self.page == Page::Library && self.focus_skin.is_some() {
                     self.skin_header(ui);
@@ -1536,4 +1588,85 @@ fn shared_fit(a: &Option<State>, b: &Option<State>, area: egui::Rect) -> f32 {
     (area.width() / largest.x)
         .min(area.height() / largest.y)
         .min(3.0)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn variants_scrollbar_and_back_to_top_work_at_both_panel_sizes() {
+        for size in [vec2(340.0, 700.0), vec2(720.0, 120.0)] {
+            let ctx = egui::Context::default();
+            install(&ctx, true, 1.0);
+            ctx.enable_accesskit();
+            let frame = |events, height| {
+                let mut offset = 0.0;
+                let output = ctx.run_ui(
+                    egui::RawInput {
+                        screen_rect: Some(egui::Rect::from_min_size(egui::Pos2::ZERO, size)),
+                        events,
+                        ..Default::default()
+                    },
+                    |ui| {
+                        variants_scroll(ui, Language::En, |ui| ui.set_min_height(height));
+                        let id = ui.make_persistent_id(egui::IdSalt::new("variants_list"));
+                        offset = egui::scroll_area::State::load(ui.ctx(), id)
+                            .unwrap()
+                            .clamped_offset()
+                            .y;
+                    },
+                );
+                (offset, output.platform_output.accesskit_update.unwrap())
+            };
+            let click = |pos, pressed| {
+                vec![
+                    egui::Event::PointerMoved(pos),
+                    egui::Event::PointerButton {
+                        pos,
+                        button: egui::PointerButton::Primary,
+                        pressed,
+                        modifiers: Default::default(),
+                    },
+                ]
+            };
+            let short = frame(vec![], 20.0).1;
+            assert!(
+                !short
+                    .nodes
+                    .iter()
+                    .any(|(_, n)| n.role() == egui::Role::ScrollBar)
+            );
+            frame(vec![], 1800.0);
+            let (_, top) = frame(vec![], 1800.0);
+            let bar = top
+                .nodes
+                .iter()
+                .find(|(_, n)| n.role() == egui::Role::ScrollBar)
+                .unwrap()
+                .1
+                .bounds()
+                .unwrap();
+            let track = pos2((bar.x1 - 4.0) as f32, (bar.y1 - 8.0) as f32);
+            frame(click(pos2(track.x, bar.y0 as f32 + 5.0), true), 1800.0);
+            frame(vec![egui::Event::PointerMoved(track)], 1800.0);
+            let (down, footer) = frame(click(track, false), 1800.0);
+            assert!(down > 0.0);
+            let button = footer
+                .nodes
+                .iter()
+                .find(|(_, n)| n.label() == Some("Back to top"))
+                .unwrap()
+                .1
+                .bounds()
+                .unwrap();
+            let point = pos2(
+                ((button.x0 + button.x1) * 0.5) as f32,
+                ((button.y0 + button.y1) * 0.5) as f32,
+            );
+            assert!(point.y < size.y);
+            frame(click(point, true), 1800.0);
+            assert_eq!(frame(click(point, false), 1800.0).0, 0.0);
+        }
+    }
 }

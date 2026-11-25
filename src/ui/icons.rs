@@ -15,6 +15,9 @@ pub fn check() -> ImageSource<'static> {
 pub fn chevron_down() -> ImageSource<'static> {
     include_image!("../../assets/icons/chevron-down.svg")
 }
+pub fn chevron_up() -> ImageSource<'static> {
+    include_image!("../../assets/icons/chevron-up.svg")
+}
 pub fn chevron_right() -> ImageSource<'static> {
     include_image!("../../assets/icons/chevron-right.svg")
 }
