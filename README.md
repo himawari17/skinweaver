@@ -3,7 +3,7 @@
 Build new osu! skins from the elements of the skins you already have, screen by screen,
 with a live preview. A Windows app written in Rust + egui.
 
-**Version 1.0.0 · Windows x64 · English and Russian UI**
+**Version 1.0.1 · Windows x64 · English and Russian UI**
 
 [Download](https://github.com/himawari17/Skinweaver/releases) · [Report a bug](https://github.com/himawari17/Skinweaver/issues) · [Русский](#русский)
 
