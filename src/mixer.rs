@@ -42,6 +42,28 @@ struct Credit {
 }
 #[derive(Default)]
 struct Credits(BTreeMap<String, Credit>);
+
+fn credit_asset_name(name: &str, skin: &str) -> Result<String> {
+    let mut name = name.replace('\\', "/");
+    // Older mixers recorded the source skin's absolute Windows path, even in shared skins.
+    if let [drive, b':', b'/', ..] = name.as_bytes()
+        && drive.is_ascii_alphabetic()
+    {
+        let parts: Vec<_> = name.split('/').collect();
+        let root = parts
+            .windows(2)
+            .position(|pair| {
+                (pair[0].eq_ignore_ascii_case("Skins")
+                    || pair[0].eq_ignore_ascii_case("HiddenSkins"))
+                    && pair[1].eq_ignore_ascii_case(skin)
+            })
+            .context("Invalid source skin path in credits.ini")?;
+        name = parts[root + 2..].join("/");
+    }
+    relative_path(&name).context("Invalid asset path in credits.ini")?;
+    Ok(name)
+}
+
 impl Credits {
     fn read(path: &Path) -> Result<Self> {
         let path = path.join("credits.ini");
@@ -63,7 +85,7 @@ impl Credits {
                 && let Some((checksum, name)) = line.split_once(" - ")
             {
                 credits.0.insert(
-                    name.into(),
+                    credit_asset_name(name, skin)?,
                     Credit {
                         skin: skin.clone(),
                         author: author.clone(),
@@ -469,6 +491,49 @@ pub fn modify_skins(
 mod tests {
     use super::*;
     use crate::modify::Modifications;
+
+    #[test]
+    fn legacy_credits_only_accept_assets_inside_the_source_skin() {
+        assert!(credit_asset_name("C:/private/file", "Base").is_err());
+        assert!(credit_asset_name("C:/osu!/Skins/Base/../other/file", "Base").is_err());
+        assert!(credit_asset_name("C:/osu!/Skins/Base/C:/private/file", "Base").is_err());
+    }
+
+    #[test]
+    fn edit_and_undo_skin_with_legacy_absolute_credits() {
+        let root = tempfile::tempdir().unwrap();
+        let path = root.path().join("Skins/Renamed");
+        fs::create_dir_all(path.join("digits")).unwrap();
+        fs::write(path.join("digits/custom-1.png"), TRANSPARENT).unwrap();
+        let original = "version: 0.1\n[\"Old name\" by \"Artist\"]\nold - C:\\osu!\\Skins\\Old name\\digits\\custom-1.png\n";
+        fs::write(path.join("credits.ini"), original).unwrap();
+        let library = Library::new(root.path()).unwrap();
+        let op = modify_skins(
+            &library,
+            std::slice::from_ref(&path),
+            &[],
+            &Modifications {
+                invisible_cursor: true,
+                ..Modifications::default()
+            },
+            &AtomicBool::new(false),
+            &|_, _| {},
+        )
+        .unwrap();
+        assert!(path.join("cursor.png").is_file());
+        let credits = fs::read_to_string(path.join("credits.ini")).unwrap();
+        assert!(credits.contains(&format!(
+            "[\"Old name\" by \"Artist\"]\n{:x} - digits/custom-1.png\n",
+            md5::compute(TRANSPARENT)
+        )));
+        assert!(!credits.contains("C:"));
+        library.undo(&op.id).unwrap();
+        assert_eq!(
+            fs::read_to_string(path.join("credits.ini")).unwrap(),
+            original
+        );
+        assert!(!path.join("cursor.png").exists());
+    }
 
     #[test]
     fn copy_of_a_skin_keeps_its_files_and_takes_the_changes() {
